@@ -5,7 +5,7 @@ function solution(a, b, c) {
     } else {
         answer = b;
     }
-    
+
     if (c < answer) {
         answer = c;
     }
