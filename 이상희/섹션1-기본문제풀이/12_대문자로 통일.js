@@ -6,7 +6,7 @@ function solution2(s) {
   let answer = "";
   for (let x of s) {
     if (x === x.toLowerCase()) {
-      answer += x.toUpperCase;
+      answer += x.toUpperCase();
     } else {
       answer += x;
     }
