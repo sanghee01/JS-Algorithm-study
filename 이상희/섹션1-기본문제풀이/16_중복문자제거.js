@@ -8,7 +8,7 @@ function solution(s) {
   return answer;
 }
 
-// indexOf(인자, n) : 첫번째 매개변수를 발견한 인덱스 리턴, 두번째 매개변수는 n번째 발견한 인덱스(생략시 첫번째)
+// indexOf(인자, n) : 첫번째 매개변수를 발견한 인덱스 리턴, 두번째 매개변수는 검색을 시작할 인덱스(생략시 첫번째)
 function solution2(s) {
   let answer = "";
   for (let i = 0; i < s.length; i++) {
