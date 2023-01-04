@@ -19,7 +19,7 @@ function solution2(s) {
   return answer;
 }
 
-// 번외: 특정 문자열 찾는 법
+// 번외: 특정 문자열 개수 찾는 법
 function solution3(s) {
   let answer = 0;
   let pos = s.indexOf("k");
