@@ -6,8 +6,8 @@ function solution(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 1; j < arr.length; j++) {
       if (sum - (answer[i] + answer[j]) === 100) {
-        answer.slice(j, 1);
-        answer.slice(i, 1);
+        answer.splice(j, 1);
+        answer.splice(i, 1);
         break;
       }
     }
