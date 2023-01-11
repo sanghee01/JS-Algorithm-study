@@ -3,12 +3,14 @@ function solution(arr) {
   let N = arr.length;
   let array = Array.from(Array(N + 2), () => Array(N + 2).fill(0));
 
+  // 격자판 세팅
   for (let i = 1; i <= N; i++) {
     for (let j = 1; j <= N; j++) {
       array[i][j] = arr[i - 1][j - 1];
     }
   }
 
+  // 봉우리 찾기
   for (let i = 1; i <= N; i++) {
     for (let j = 1; j <= N; j++) {
       if (
