@@ -1,0 +1,18 @@
+function solution(N) {
+  let answer = 0;
+
+  for(let i=0; i<=N; i+=1) {
+    answer += i;
+  }
+
+  return answer;
+}
+
+function solution2(N) {
+  // 시그마 합공식
+  return N * (N + 1) / 2;
+}
+
+const N = 6;
+const result = solution(N);
+console.log(result);
