@@ -13,6 +13,8 @@ function solution2(s) {
   return answer;
 }
 
+// replaceAll
+
 function solution3(s) {
   let answer = "";
   for (let x of s) {
