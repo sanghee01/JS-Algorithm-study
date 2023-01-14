@@ -14,7 +14,7 @@ function solution(s) {
 
 function solution2(s) {
   let answer = "YES";
-  s = s.toLowerCase().replace(/[^a-z]/g, "");
+  s = s.toLowerCase().replace(/[^a-z]/g, ""); // 소문자 알파펫 아닌 것들 다 제거
   if (s.split("").reverse().join("") !== s) return "NO";
   return answer;
 }
