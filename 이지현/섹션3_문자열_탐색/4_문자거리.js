@@ -1,5 +1,5 @@
 function solution(str, element){
-	let answer = [];
+    let answer = [];
     let p = 100;
 
     for (x of str) {
