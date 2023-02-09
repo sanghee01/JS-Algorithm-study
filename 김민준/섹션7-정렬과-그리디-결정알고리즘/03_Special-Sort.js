@@ -10,6 +10,6 @@ function solution(N, NUMBER_LIST) {
 }
 
 const N = 8;
-const NUMBER_LIST = [1,2,3,-3,-2,5,6,-6];
+const NUMBER_LIST = [1, 2, 3, -3, -2, 5, 6, -6];
 const ANSWER = solution(N, NUMBER_LIST);
 console.log(ANSWER);
