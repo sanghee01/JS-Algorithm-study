@@ -1,17 +1,20 @@
 function solution(target, arr) {
-  let answer;
   let min = 0;
   let max = arr.length - 1;
   let median;
 
   arr.sort((a, b) => a - b);
   while (min <= max) {
-    median = Math.floor(max + min / 2);
-    if (target === arr[median]) {
-      answer = median + 1;
-      return answer;
-    } else if (target < arr[median]) max = median - 1;
-    else min = median + 1;
+    median = Math.floor((min + max) / 2);
+    if (target > arr[median]) {
+      min = median + 1;
+    } else if (target < arr[median]) {
+      max = median - 1;
+    } else if (target === arr[median]) {
+      return median + 1;
+    } else {
+      return "없는 값";
+    }
   }
 }
 
