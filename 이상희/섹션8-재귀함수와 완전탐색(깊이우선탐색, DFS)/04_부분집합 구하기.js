@@ -11,9 +11,11 @@ function solution(n) {
       if (tmp.length > 0) answer.push(tmp.trim()); // 공집합보다 클 때만
     } else {
       // 두 갈래
-      ch[v] = 1;
+      // 포함시킨다
+      ch[v] = 1; // 체크
       DFS(v + 1);
-      ch[v] = 0;
+      // 포함시키지 않는다
+      ch[v] = 0; // 체크 풀음
       DFS(v + 1);
     }
   }
