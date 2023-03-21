@@ -19,11 +19,10 @@ function solution(n) {
   // 점화식을 통해 규칙을 찾아내는 것이 중요하다.
   for (let i = 3; i <= n; i++) {
     dy[i] = dy[i - 2] + dy[i - 1];
-    console.log(dy[i]);
   }
 
   // 7번째 계단의 수가 저장된 값을 반환한다.
   return dy[n];
 }
 
-console.log(solution(7));
+console.log(solution(8));
